@@ -1,2 +1,4 @@
 # Project exclude paths
 /venv/
+/mysite/django_cache/
+/mysite/templates/db.sqlite
