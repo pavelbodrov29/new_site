@@ -5,13 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.min.css' %}">
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
-
     <title>{% block title %} Новое старьё {% endblock %}</title>
 </head>
 <body>
-
 {% include 'inc/_nav.html'%}
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<!--<nav class="navbar navbar-expand-lg navbar-light bg-light">
     <a class="navbar-brand" href="{% url 'home'%}">Новое старьё</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-bs-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -35,7 +33,7 @@
         {% endif %}
 
     </div>
-</nav>
+</nav>-->
 
 <div class="container mt-3">
     <div class="row">
@@ -50,16 +48,16 @@
 
             {% for message in messages %}
 
-                {% if message.tags == 'error' %}
-                    <div class="alert alert-danger" role="alert">
-                        {{ message }}
-                    </div>
-                {% else %}
-                    <div class="alert alert-{{ message.tags }}" role="alert">
-                        {{ message }}
-                    </div>
+            {% if message.tags == 'error' %}
+            <div class="alert alert-danger" role="alert">
+                {{ message }}
+            </div>
+            {% else %}
+            <div class="alert alert-{{ message.tags }}" role="alert">
+                {{ message }}
+            </div>
 
-                {% endif %}
+            {% endif %}
 
             {% endfor %}
 
