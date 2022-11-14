@@ -18,6 +18,7 @@
         <option value="$MODULE_DIR$/mysite/mysite/static" />
         <option value="$MODULE_DIR$/mysite/media" />
         <option value="$MODULE_DIR$/mysite" />
+        <option value="$MODULE_DIR$/mysite/testapp/templates" />
       </list>
     </option>
   </component>
